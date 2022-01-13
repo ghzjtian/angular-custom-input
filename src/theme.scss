@@ -27,17 +27,20 @@ $theme: mat.define-light-theme((
   )
 ));
 
+mat-spinner {
+  &.mat-progress-spinner {
+    zoom: 0.2;
+    display: inline-block;
+  }
+  &.mat-progress-spinner circle, &.mat-spinner circle {
+    stroke: red;
+    }
+}
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($theme);
 
-@import "input-base";
+// @import "input-base";
 
-$color333: #333;
-
-// mat-Input element style
-// .custom-input-style{
-//   @include custom-input-style-base;
-//   width: 100%;
-// }

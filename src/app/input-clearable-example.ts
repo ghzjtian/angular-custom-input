@@ -9,7 +9,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./input-clearable-example.css'],
 })
 export class InputClearableExample {
-  value = 'Clear me';
+  value = '';
 }
 
 

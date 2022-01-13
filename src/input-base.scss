@@ -5,45 +5,25 @@
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
 
-  &.mat-form-field-appearance-fill {
-    .mat-form-field-flex {
-      align-items: center;
-      padding: 0;
-      padding-left: 10px;
-      border-radius: 5px;
-      border: solid 1px rgba(169, 169, 169, 0.5);
-      background: $background-color;
-    }
-  }
-
-  &:hover {
-    box-shadow: mat.get-color-from-palette($accent, lighter) 0px 3px 5px;
-  }
-
-  // Vertical center the input element
   .mat-form-field-wrapper {
-    padding: 0;
+    padding-bottom: 0;
+  }
+
+  .mat-form-field-flex > .mat-form-field-infix {
+    padding: 1px 0 5px 0;
+  }
+
+  .mat-form-field-flex > .mat-form-field-outline-thick {
+    color: rgba(mat.get-color-from-palette($primary, default), 0.25);
   }
 
   .mat-form-field-label-wrapper {
-    display: none;
+    top: -1.5rem;
   }
 
-  /* Set placeholder style  */
-  .placeholder {
-    color: #333;
-  }
-  .mat-focused .placeholder {
-    color: rgba(51, 51, 51, 0.54);
-  }
-  /* vertical placeholder's center  */
-  .mat-form-field-label {
-    top: 50%;
-  }
-
-  /* Hide the underline transparent when not focus */
-  .mat-form-field-underline {
-    display: none;
+  .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+    transform: translateY(-0.359375em) scale(0.75);
+    width: 133.33333%;
   }
 }
 
