@@ -8,6 +8,8 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+@import "input-base";
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
@@ -42,5 +44,8 @@ mat-spinner {
 // that you are using.
 @include mat.all-component-themes($theme);
 
-// @import "input-base";
+mat-form-field {
+  @include app-mat-form-field($theme);
+}
+
 
